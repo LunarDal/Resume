@@ -549,26 +549,41 @@
     gap: 14px;
     font-size: 18px;
 }
+#end .contact_list li img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
 #end .contact_icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: #eaf0ff;
     font-size: 20px;
+    line-height: 1;
     box-shadow: 0 6px 14px rgba(45, 75, 123, 0.12);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#end .contact_icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
 }
 #end .contact_list span {
     display: block;
-    min-width: 90px;
-    font-weight: 700;
-    color: #2d4b7b;
+    min-width: 70px;
 }
 #end .contact_list a {
-    color: #1f2937;
+    color: #2d4b7b;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
 }
 #end .contact_list a:hover {
     text-decoration: underline;
