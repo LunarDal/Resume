@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var menu = $('.nav > li');
+            var contents = $('#wrap > div');  
+
+            $('.nav> li').click(function(event){
+                event.preventDefault();
+                
+                var tg = $(this);
+                var i = tg.index();
+                
+                var section = $('#wrap > div').eq(i);
+                var tt = section.offset().top;
+                
+                $('html, body').stop().animate({scrollTop:tt});
+            });
+            //메뉴에 addclass를 적용
+            // $(window).scroll(function(){
+            //     var sct = $(window).scrollTop();
+                
+            //     $('#wrap > div').each(function(){
+            //         var tg = $(this);
+            //         var i = tg.index();
+            //         if(tg.offset().top <= sct){
+            //             $('.nav > li').removeClass('on');
+            //             $('.nav > li').eq(i).addClass('on');
+            //     }
+            // });
+            // $(window).scroll(function(){
+            // var sct = $(window).scrollTop();
+            
+            // contents.each(function(){
+            //     var tg = $(this);
+            //     var i = tg.index();
+            //     if(tg.offset().top <= sct){
+            //         menu.removeClass('on');
+            //         menu.eq(i).addClass('on');
+            //     }
+            // });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 메인 -->
+        <div id="main">
+            <div class="in_main">
+              <div class="header">
+                 <h1 class="logo">LMY</h1>
+                 <ul class="nav">
+                     <li><a href="#main">Home</a></li>
+                     <li><a href="#profile">Profile</a></li>
+                     <li><a href="#skill">Skill</a></li>
+                     <li><a href="#project_1">Project1</a></li>
+                     <li><a href="#project_2">Project2</a></li>
+                     <li><a href="#project_3">Project3</a></li>
+                     <!-- <li><a href="#">Project4</a></li> -->
+                     <li><a href="#end">finish</a></li>
+                  </ul>
+              </div> 
+                <h2>
+                    Hello, I'm Lee Moon Young
+                </h2>
+                <p>UX Designer & Front End Developer</p>
+            </div>
+        </div>
+        <!-- 소개 -->
+        <div id="profile">
+            <div class="in_profile">
+                <div class="profile_wrap">
+                    <div class="profile_intro">
+                        <div class="profile_image">
+                            <img src="images/avatar.png" alt="프로필 이미지">
+                        </div>
+                        <div class="profile_text">
+                            <h3>About Me</h3>
+                            <p>
+                                안녕하세요. 사용자 경험을 중요하게 생각하며, 깔끔하고 직관적인 웹 화면을 만드는 프론트엔드 개발자입니다.
+                                웹 표준과 접근성을 바탕으로 반응형 레이아웃을 구현하고, 사용자가 편하게 이용할 수 있는 UI를 만드는 데 집중하고 있습니다.
+                            </p>
+                            <p>
+                                작은 디테일에서도 의미를 찾고, 협업을 통해 더 나은 결과를 만들어가는 것을 좋아합니다.
+                                앞으로도 디자인과 기술을 연결하는 역할을 수행하며, 누구나 이해하기 쉽고 편리한 웹 경험을 만들고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="profile_details">
+                        <div class="detail_box">
+                            <h3>Education</h3>
+                            <p>금곡고등학교 졸업(2013.03~2016.02)</p>
+                            <p>동명대학교 졸업(2016.03~2020.02)</p>
+                            <p>부산대 일반대학원 석사 졸업(2020.03~2022.02)</p>
+                        </div>
+                        <div class="detail_box">
+                            <h3>Awards</h3>
+                            <p>동명대학교 PRIME사업단 공모전 특선(2016.11)</p>
+                            <p>동명대학교 PRIME사업단 공모전 장려상(2018.11)</p>
+                            <p>부산영상애니메이션포럼 우수상(2019.11)</p>
+                        </div>
+                        <div class="detail_box">
+                            <h3>Certificates</h3>
+                            <p>GTQ포토샵1급</p>
+                            <p>웹디자인기능사</p>
+                        </div>
+                        <div class="detail_box">
+                            <h3>Career</h3>
+                            <p>(주)스튜디오 반달 - 애니메이터 사원(2021.08~2022.05)</p>
+                            <p>콘텐츠코어(주) - 애니메이터 사원(2022.06~2023.12)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 스킬 -->
+        <div id="skill">  
+            <div class="in_skill">
+                <div class="profile_summary">
+                    <h3>Resume Summary</h3>
+                    <ul>
+                        <li><span>핵심 역량</span><strong>HTML / CSS / JavaScript / jQuery / React</strong></li>
+                        <li><span>주요 경험</span><strong>웹 퍼블리싱, UI 구현, 인터랙션 개발</strong></li>
+                        <li><span>관심 분야</span><strong>UX 중심의 사용자 친화적 웹 서비스 개발</strong></li>
+                    </ul>
+                </div>
+                <div class="skill_panel">
+                    <div class="skill_header">
+                        <h3>Skill</h3>
+                        <p>웹 표준과 사용자 중심의 인터랙션을 바탕으로, 시각적으로 깔끔하고 기능적으로 안정적인 화면을 구현합니다.</p>
+                    </div>
+                    <ul class="skill_list">
+                        <li>
+                            <div>
+                                <div class="in_box in_box01">90%</div>
+                            </div>
+                            <h5>html</h5>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="in_box in_box02">80%</div>
+                            </div>
+                            <h5>css</h5>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="in_box in_box03">50%</div>
+                            </div>
+                            <h5>JS</h5>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="in_box in_box04">60%</div>
+                            </div>
+                            <h5>jquery</h5>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="in_box in_box05">50%</div>
+                            </div>
+                            <h5>react</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill_tabs">
+                    <a href="#project_1" class="skill_tab">Project1</a>
+                    <a href="#project_2" class="skill_tab">Project2</a>
+                    <a href="#project_3" class="skill_tab">Project3</a>
+                </div>
+            </div>
+            <script>
+             $(document).ready(function(){
+                var scene01Num = 1;
+
+                $(window).scroll(function(){
+                    var scrollTop = $(document).scrollTop();
+                    if(scrollTop > 1800 && scene01Num == 1) {
+                        scene01Num = 0;
+                        $('#skill .in_box01').stop().delay(0).css({top:'300px'}).animate({top:'30px'},1000);
+                        $('#skill .in_box02').stop().delay(500).css({top:'300px'}).animate({top:'60px'},1000);
+                        $('#skill .in_box03').stop().delay(1000).css({top:'300px'}).animate({top:'150px'},1000);
+                        $('#skill .in_box04').stop().delay(1500).css({top:'300px'}).animate({top:'120px'},1000);
+                        $('#skill .in_box05').stop().delay(2000).css({top:'300px'}).animate({top:'150px'},1000);
+                    }
+                    else if(scrollTop < 1500 && scene01Num == 0){
+                        scene01Num = 1;
+                        $('#skill .in_box01').stop().css({top:'270px'}).animate({top:'300px'},1000);
+                        $('#skill .in_box02').stop().css({top:'240px'}).animate({top:'300px'},1000); 
+                        $('#skill .in_box03').stop().css({top:'150px'}).animate({top:'300px'},1000);
+                        $('#skill .in_box04').stop().css({top:'180px'}).animate({top:'300px'},1000);
+                        $('#skill .in_box05').stop().css({top:'150px'}).animate({top:'300px'},1000);
+                    }
+                });
+             });
+
+            </script>
+        </div>
+        <!-- 프로젝트 -->
+        <div id="project_1">
+            <div class="in_project">
+               <ul class="list">
+                   <li class="output">
+                       <div class="device-preview">
+                           <div class="monitor">
+                               <div class="project-screen"></div>
+                           </div>
+                           <div class="phone">
+                               <div class="project-screen phone-screen"></div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="account">
+                       <div class="in_account">
+                            <h3>프로젝트명 : Forest 웹사이트</h3>
+                            <p>작업기간 : 2026.03 ~ 2026.04</p>
+                            <p>작업요점 : 웹사이트 디자인 및 개발</p>
+                            <p>사용기술 : HTML, CSS, JavaScript, jQuery</p>
+                            <a href="">결과물보기</a>
+                        </div>
+                   </li>
+               </ul>
+            </div>
+        </div>
+        <div id="project_2">
+            <div class="in_project">
+                <ul class="list">
+                    <li class="output">
+                        <div class="device-preview">
+                            <div class="monitor">
+                                <div class="project-screen"></div>
+                            </div>
+                            <div class="phone">
+                                <div class="project-screen phone-screen"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account">
+                        <div class="in_account">
+                            <h3>프로젝트명 : SkyValley 웹사이트 리뉴얼</h3>
+                            <p>작업기간 : 2026.04 ~ 2026.05</p>
+                            <p>작업요점 : 웹사이트 리뉴얼 및 기능 개선</p>
+                            <p>사용기술 : HTML, CSS, JavaScript</p>
+                            <a href="">결과물보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="project_3">
+            <div class="in_project">
+                <ul class="list">
+                    <li class="output">
+                        <div class="device-preview">
+                            <div class="monitor">
+                                <div class="project-screen"></div>
+                            </div>
+                            <div class="phone">
+                                <div class="project-screen phone-screen"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account">
+                        <div class="in_account">
+                            <h3>프로젝트명 : Petwell 웹사이트</h3>
+                            <p>작업기간 : 2026.05 ~ 2026.07</p>
+                            <p>작업요점 : 반응형 구축</p>
+                            <p>사용기술 : HTML, CSS</p>
+                            <a href="">결과물보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div id="project_4">
+            <div class="in_project">
+                <ul class="list">
+                    <li class="output">
+                        <div><img src="../마스크 그룹 1.png" width="100%" alt=""></div>
+                    </li>
+                    <li class="account">
+                        <h3>프로젝트명</h3>
+                        <p>작업기간</p>
+                        <p>작업요점</p>
+                        <p>사용기술</p>
+                        <a href="">코드보기</a>
+                        <a href="">결과물보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- 마무리 -->
+        <div id="end">
+            <div class="in_end">
+                <div class="end_wrap">
+                    <h1>Thank you for visiting my portfolio!</h1>
+                    <ul class="contact_list">
+                        <li><span>Contact</span><a href="mailto:yourname@example.com">yourname@example.com</a></li>
+                        <li><span>GitHub</span><a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></li>
+                        <li><span>Notion</span><a href="https://notion.so/yourname" target="_blank" rel="noreferrer">notion.so/yourname</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 퀵메뉴 -->
+     <div id="q_mn">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Project1</a></li>
+            <li><a href="#">Project2</a></li>
+            <li><a href="#">Project3</a></li>
+            <!-- <li><a href="#">Project4</a></li> -->
+            <li><a href="#">finish</a></li>
+        </ul>
+    </div>
+    <script>
+        $(function(){
+            $(window).scroll(
+            function(){
+            var	windowTop =$(window).scrollTop()+300;
+            $("#q_mn").stop().animate({top:windowTop+"px" },500);
+            //$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);	
+                }
+            );
+        });
+    </script>    
+</body>
+</html>
