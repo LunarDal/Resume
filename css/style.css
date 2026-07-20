@@ -544,12 +544,24 @@
 }
 #end .contact_list li {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 14px;
     font-size: 18px;
 }
+#end .contact_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #eaf0ff;
+    font-size: 20px;
+    box-shadow: 0 6px 14px rgba(45, 75, 123, 0.12);
+}
 #end .contact_list span {
-    display: inline-block;
+    display: block;
     min-width: 90px;
     font-weight: 700;
     color: #2d4b7b;
