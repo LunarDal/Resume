@@ -10,22 +10,23 @@
 #wrap > div:nth-child(2) {
     background:url(../profile.png) no-repeat 0 0;
     background-color:#fff;
+    height: 130vh;
 }
 #wrap > div:nth-child(3) {
     background-color: rgb(135, 222, 208);
-    height: 120vh;
+    height: 160vh;
 }
 #wrap > div:nth-child(4) {
-    background-color: rgb(135, 183, 222);
+    background-color: rgb(170, 217, 255);
 }
 #wrap > div:nth-child(5) {
-    background-color: rgb(198, 173, 255);
+    background-color: rgb(212, 194, 255);
 }
 #wrap > div:nth-child(6) {
-    background-color: rgb(135, 183, 222);
+    background-color: rgb(170, 217, 255);
 }
 #wrap > div:nth-child(7) {
-    background-color: rgb(198, 173, 255);
+    background-color: rgb(212, 194, 255);
 }
 #wrap > div:nth-child(8) {
     background-color: rgb(255, 255, 255);
@@ -83,6 +84,11 @@
     background-size: 100% 100%;
 }
 /* profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #profile .in_profile {
     display: flex;
     justify-content: center;
@@ -92,10 +98,10 @@
 }
 #profile .profile_wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     align-items: stretch;
 }
 #profile .profile_details {
@@ -279,7 +285,8 @@
 }
 #skill .skill_tabs {
     display: flex;
-    gap: 12px;
+    gap: 20px;
+    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -414,7 +421,7 @@
 }
 .in_project .account .in_account h3 {
     padding-bottom: 18px;
-    font-size: 24px;
+    font-size: 22px;
     color: #1f2937;
     line-height: 1.4;
 }
@@ -513,9 +520,15 @@
     background:url(../images/project3.png) no-repeat center center;
     background-size: cover;
 }
+/* project4 */
+#project_4 .project-screen {
+    background:url(../images/project4.jpg) no-repeat center center;
+    background-size: cover;
+}
 #project_1 .phone-screen,
 #project_2 .phone-screen,
-#project_3 .phone-screen {
+#project_3 .phone-screen,
+#project_4 .phone-screen {
     background-position: center top;
 }
 /* end */
@@ -539,14 +552,17 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 0;
-    margin: 0;
+    margin: 10px 0;
+    border-radius: 18px;
+    padding: 24px 150px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 #end .contact_list li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
     font-size: 18px;
 }
 #end .contact_list li img {
@@ -562,28 +578,28 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #eaf0ff;
+    background: #fff;
     font-size: 20px;
     line-height: 1;
-    box-shadow: 0 6px 14px rgba(45, 75, 123, 0.12);
+    box-shadow: 0 10px 15px rgba(45, 75, 123, 0.12);
     overflow: hidden;
     flex-shrink: 0;
 }
 #end .contact_icon img {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
     display: block;
 }
 #end .contact_list span {
     display: block;
-    min-width: 70px;
+    min-width: 50px;
 }
 #end .contact_list a {
     color: #2d4b7b;
     text-decoration: none;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 24px;
 }
 #end .contact_list a:hover {
     text-decoration: underline;
@@ -596,14 +612,14 @@
     padding: 0 10px;
     z-index: 9999;
     width:120px;
-    height:280px;
+    height:320px;
     border-radius: 6px;
     border:1px solid #ccc;
     background-color: #fff; 
 }
 #q_mn ul.nav { 
     margin:0 auto; 
-    margin-top:25px;
+    margin-top:30px;
     list-style:none; 
     width:70px;
 }	
@@ -611,13 +627,12 @@
     margin-bottom: 10px;
 }
 #q_mn ul.nav li:hover { 
-    color: #ccc;
+    color: #2d4b7b;
     font-weight: 500;
-    transition: all 0.7s;
 }
 #q_mn ul.nav li a { 
     color: #aaa;
 }
 #q_mn ul.nav li.on a { 
-    color: rgb(15, 15, 15);
+    color: #2d4b7b;
 }
